@@ -1,0 +1,51 @@
+[
+  {
+    "from": "PNQ",
+    "to": "DEL",
+    "arrival": "Fri Jul 22 2016 11:20:00 GMT+0530 (IST)",
+    "departure": "Fri Jul 22 2016 10:20:00 GMT+0530 (IST)",
+    "price": 9500,
+    "id": 1,
+    "img": "https://worldairlinenews.files.wordpress.com/2015/06/thai-logo-lrw.jpg"
+  },
+
+  {
+    "from": "PNQ",
+    "to": "DEL",
+    "arrival": "Sat Jul 23 2016 11:20:00 GMT+0530 (IST)",
+    "departure": "Sat Jul 23 2016 10:20:00 GMT+0530 (IST)",
+    "price": 10000,
+    "id": 2,
+    "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e8/EtihadAirways-AbuDhabi-MasterLogo-Eng.jpg/250px-EtihadAirways-AbuDhabi-MasterLogo-Eng.jpg"
+  },
+
+  {
+    "from": "PNQ",
+    "to": "DEL",
+    "arrival": "Sun Jul 24 2016 11:20:00 GMT+0530 (IST)",
+    "departure": "Sun Jul 24 2016 10:20:00 GMT+0530 (IST)",
+    "price": 8500,
+    "id": 3,
+    "img": "https://www.aa.com/newamerican/img/newLook1.jpg"
+  },
+
+  {
+    "from": "PNQ",
+    "to": "DEL",
+    "arrival": "Mon Jul 25 2016 11:20:00 GMT+0530 (IST)",
+    "departure": "Mon Jul 25 2016 10:20:00 GMT+0530 (IST)",
+    "price": 2000,
+    "id": 4,
+    "img": "https://skift.com/wp-content/uploads/2013/10/lufthansa-784x728.jpg"
+  },
+
+  {
+    "from": "PNQ",
+    "to": "DEL",
+    "arrival": "Tue Jul 26 2016 11:20:00 GMT+0530 (IST)",
+    "departure": "Tue Jul 26 2016 10:20:00 GMT+0530 (IST)",
+    "price": 30000,
+    "id": 5,
+    "img": "http://www.praimgroup.com/shop/images/categories/PanAm_Globe_logo.jpg"
+  }
+]

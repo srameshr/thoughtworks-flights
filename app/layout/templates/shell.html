@@ -1,0 +1,19 @@
+<nav class="navbar navbar-fixed navbar-top">
+<header class="clearfix">
+  <h1>PanAm</h1>
+</header>
+</nav>
+    <section id="content" class="content">
+
+
+          <tabs>
+    <pane title="One way">
+      <search-flight on-close="vm.searchFlights('lol')"></search-flight>
+    </pane>
+    <pane title="Return">
+      <search-flight show-return="true" on-close="vm.searchFlights('lol')"></search-flight>
+    </pane>
+  </tabs>
+        <div ui-view></div>
+    </section>
+</div>

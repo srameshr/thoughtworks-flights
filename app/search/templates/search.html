@@ -1,0 +1,17 @@
+<form novalidate name="searchForm" ng-submit="searchFlights(search, searchForm.$valid)">
+  <input type="text" required name="origin" ng-model="search.origin" placeholder="Enter origin city" /><br />
+
+  <div ng-messages="searchForm.origin.$error" style="color:maroon">
+    <div ng-message="required">Enter bitch</div>
+  </div>
+
+  <input type="text" required ng-model="search.destination" placeholder="Enter destination city" /><br />
+  <input type="date" required ng-model="search.departure" /><br />
+  <input type="date" ng-model="search.arrival" ng-required="showReturn" ng-if="showReturn" /><br />
+  <select ng-model="search.seats" required>
+    <option value="1">1</option>
+    <option value="2">2</option>
+  </select>
+  <input type="submit" value="SEARCH" />
+</form>
+  <button ng-click="close({message: 'closing for now'})">FOObar</button>

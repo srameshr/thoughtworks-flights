@@ -1,0 +1,18 @@
+.navbar-fixed {
+    top: 0;
+    border-width: 0 0 1px;
+}
+
+.navbar-bottom, .navbar-top {
+    position: fixed;
+    right: 0;
+    left: 0;
+    z-index: 1030;
+}
+
+.navbar {
+    position: relative;
+    min-height: 50px;
+    margin-bottom: 20px;
+    border: 1px solid transparent;
+}

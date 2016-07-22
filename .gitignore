@@ -1,0 +1,20 @@
+
+# Ignore Node, Bower & TSD
+##########################
+node_modules
+bower_components
+#typings
+build
+.tmp
+
+# Ignore Test reporters
+###################
+**/test/coverage
+report
+
+# OS generated files #
+######################
+.DS_Store*
+ehthumbs.db
+Icon?
+Thumbs.db

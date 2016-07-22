@@ -1,0 +1,8 @@
+<div ng-repeat="flight in flights | filter: priceRange | orderBy: 'price'">
+  <h3>{{flight.price}}</h3>
+  <p>{{flight.departure}}</p>
+  <p>{{flight.arrival}}</p>
+</div>
+
+<input type="range" ng-model="filterPrice"   min=1000 max=10000 step=100 value=100/>
+{{filterPrice}}
