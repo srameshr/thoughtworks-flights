@@ -90,5 +90,55 @@
     "number": "A1 205",
     "id": 6,
     "img": "http://www.praimgroup.com/shop/images/categories/PanAm_Globe_logo.jpg"
+  },
+
+  {
+    "from": "MUM",
+    "to": "KOZ",
+    "from_name": "Mumbai",
+    "to_name": "Kozikhode",
+    "arrival": "Tue Jul 27 2016 11:20:00 GMT+0530 (IST)",
+    "departure": "Tue Jul 27 2016 10:20:00 GMT+0530 (IST)",
+    "price": 4000,
+    "number": "A1 204",
+    "id": 7,
+    "img": "https://worldairlinenews.files.wordpress.com/2015/06/thai-logo-lrw.jpg"
+  },
+
+  {
+    "from": "MUM",
+    "to": "KOZ",
+    "from_name": "Mumbai",
+    "to_name": "Kozikhode",
+    "arrival": "Mon Jul 25 2016 11:20:00 GMT+0530 (IST)",
+    "departure": "Mon Jul 25 2016 10:20:00 GMT+0530 (IST)",
+    "price": 5000,
+    "number": "A1 204",
+    "id": 8,
+    "img": "http://static1.squarespace.com/static/55b91d41e4b0e176420df76f/5652150de4b0a376ef825f9e/5652150ee4b085e3bb8be4c5/1448236605464/lufthansa%20logo.jpg"
+  },
+  {
+    "from": "MUM",
+    "to": "KOZ",
+    "from_name": "Mumbai",
+    "to_name": "Kozikhode",
+    "arrival": "Mon Jul 25 2016 11:20:00 GMT+0530 (IST)",
+    "departure": "Mon Jul 25 2016 10:20:00 GMT+0530 (IST)",
+    "price": 2500,
+    "number": "A1 204",
+    "id": 9,
+    "img": "http://static1.squarespace.com/static/55b91d41e4b0e176420df76f/5652150de4b0a376ef825f9e/5652150ee4b085e3bb8be4c5/1448236605464/lufthansa%20logo.jpg"
+  },
+  {
+    "from": "MUM",
+    "to": "KOZ",
+    "from_name": "Mumbai",
+    "to_name": "Kozikhode",
+    "arrival": "Mon Jul 25 2016 11:20:00 GMT+0530 (IST)",
+    "departure": "Mon Jul 25 2016 10:20:00 GMT+0530 (IST)",
+    "price": 4600,
+    "number": "A1 204",
+    "id": 10,
+    "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e8/EtihadAirways-AbuDhabi-MasterLogo-Eng.jpg/250px-EtihadAirways-AbuDhabi-MasterLogo-Eng.jpg"
   }
 ]

@@ -1,6 +1,8 @@
 const gulp = require("gulp");
 const jscs = require('gulp-jscs');
 
+const webserver = require('gulp-webserver');
+
 //Reused
 const concat = require('gulp-concat');
 
@@ -10,6 +12,14 @@ const minifyCSS = require('gulp-minify-css');
 const autoPrefix = require('gulp-autoprefixer'); // Browser support
 
 const config = require('./gulp.config')();
+
+gulp.task("serve", () => {
+  gulp.src('./')
+    .pipe(webserver({
+      open: true,
+      fallback: 'index.html'
+  }));
+});
 
 gulp.task("wiredep", () => {
   console.log("Pending! Not part of the requirement");
