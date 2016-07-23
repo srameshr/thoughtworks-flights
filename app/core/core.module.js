@@ -4,6 +4,7 @@
     .module("app.core", [
       'ngAnimate',
       'ngSanitize',
+      'ngMessages',
       /* Cross-app modules */
       // 'blocks.diagnostics',
       // 'blocks.exception',

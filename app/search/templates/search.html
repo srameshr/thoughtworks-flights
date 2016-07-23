@@ -1,17 +1,42 @@
 <form novalidate name="searchForm" ng-submit="searchFlights(search, searchForm.$valid)">
-  <input type="text" required name="origin" ng-model="search.origin" placeholder="Enter origin city" /><br />
+  <label for="origin">Origin</label>
+  <input type="text" required name="origin" ng-model="search.origin" placeholder="Enter origin city" />
 
-  <div ng-messages="searchForm.origin.$error" style="color:maroon">
-    <div ng-message="required">Enter bitch</div>
+  <div ng-messages="searchForm.origin.$error" class="error" ng-if="searchForm.$submitted">
+    <div ng-message="required">Origin is required</div>
   </div>
 
-  <input type="text" required ng-model="search.destination" placeholder="Enter destination city" /><br />
-  <input type="date" required ng-model="search.departure" /><br />
-  <input type="date" ng-model="search.arrival" ng-required="showReturn" ng-if="showReturn" /><br />
-  <select ng-model="search.seats" required>
+  <label for="destination">Destination</label>
+  <input type="text" required name="destination" ng-model="search.destination" placeholder="Enter destination city" />
+  <div ng-messages="searchForm.destination.$error" class="error" ng-if="searchForm.$submitted">
+    <div ng-message="required">Destination is required</div>
+  </div>
+
+  <label for="departure">Departure</label>
+  <input type="date" name="departure" required ng-model="search.departure" />
+  <div ng-messages="searchForm.departure.$error" class="error" ng-if="searchForm.$submitted">
+    <div ng-message="required">Departure date is required</div>
+    <div ng-message="type">Please use dd/mm/yyyy format.</div>
+  </div>
+
+  <label for="arrival" ng-if="showReturn">Arrival</label>
+  <input type="date" name="arrival" ng-model="search.arrival" ng-required="showReturn" ng-if="showReturn" />
+  <div ng-messages="searchForm.arrival.$error" class="error" ng-if="searchForm.$submitted">
+    <div ng-message="required">Arrival date is requred</div>
+  </div>
+
+  <label for="passengers">Passengers</label>
+  <!-- ng-options loop is a better option // TODO refactor-->
+  <select ng-model="search.seats" required name="seats">
     <option value="1">1</option>
     <option value="2">2</option>
+    <option value="3">3</option>
+    <option value="4">4</option>
+    <option value="5">5</option>
   </select>
-  <input type="submit" value="SEARCH" />
+  <div ng-messages="searchForm.seats.$error" class="error" ng-if="searchForm.$submitted">
+    <div ng-message="required">Passenger count is required.</div>
+  </div>
+
+  <input type="submit" value="SEARCH" class="search-flight button"/>
 </form>
-  <button ng-click="close({message: 'closing for now'})">FOObar</button>

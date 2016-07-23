@@ -11,6 +11,10 @@ const autoPrefix = require('gulp-autoprefixer'); // Browser support
 
 const config = require('./gulp.config')();
 
+gulp.task("wiredep", () => {
+  console.log("Pending! Not part of the requirement");
+});
+
 gulp.task("scripts", () => {
   return gulp.src(config.allJS)
     .pipe(jscs({fix: true}))
@@ -30,3 +34,9 @@ gulp.task("css", () => {
     .pipe(minifyCSS())
     .pipe(gulp.dest(config.cssDest))
 })
+
+gulp.task('watch', function() {
+  // Undo scripts, fonts, img. Breaking.
+  gulp.watch(config.allScss, ['css']);
+});
+

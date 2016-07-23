@@ -1,0 +1,7 @@
+.layout {
+  @include display-flex;
+
+  & .content-right {
+    @include flex(1);
+  }
+}

@@ -1,0 +1,86 @@
+.flight-list-item {
+  border-bottom: 1px solid #bfbfbf;
+
+  & .container {
+    @include display-flex;
+    @include flex-wrap(wrap);
+    @include align-items(center);
+
+    & .date {
+      @include display-flex;
+
+      & div {
+        padding: 0 1em 0 0;
+      }
+
+      & .round-trip {
+        padding-left: 1em;
+
+      }
+
+      & h6 {
+        margin-top: 0;
+        margin-bottom: 1em;
+        font-family: circularBold;
+      }
+
+      & p {
+        margin-top: 0;
+        margin-bottom: 0.5em;
+        font-family: circularBook;
+      }
+    }
+
+    & .textual {
+      @include flex(1);
+      padding-top: 0.5em;
+
+      & h3 {
+        font-family: circularBold;
+        margin-top: 0.1em;
+        margin-bottom: 0.6em;
+      }
+    }
+
+    & .pictoral {
+      @include display-flex;
+      @include align-items(center);
+      @include flex-direction(column);
+      & img {
+        width: 100px;
+        border: 3px solid #afafaf;
+        border-radius: 5px;
+        padding: 0px;
+        margin: 0.5em;
+      }
+    }
+  }
+}
+
+.flight-list-range {
+  position: relative;
+  bottom: 0;
+  background: rgba(107, 107, 107, 0.6);
+  text-align: right;
+}
+
+.search-flight {
+  float: right;
+  margin-top: 1.5em;
+  padding: 0.5em;
+}
+
+.no-flights {
+  text-align: center;
+
+  & h3 {
+    color: $light;
+    font-family: circularBold;
+  }
+
+  & h5 {
+    font-family: circularBook;
+    color: $light;
+  }
+}
+

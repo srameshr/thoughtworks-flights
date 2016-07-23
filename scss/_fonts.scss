@@ -1,0 +1,22 @@
+@font-face {
+    font-family: circularBold;
+    src: url(../fonts/CircularStd-Bold.woff) format('woff'),
+         url(../fonts/CircularStd-Bold.otf) format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: circularMedium;
+    src: url(../fonts/CircularStd-Medium.otf) format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: circularBook;
+    src: url(../fonts/CircularStd-Book.woff) format('woff'),
+    url(../fonts/CircularStd-Medium.otf) format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}

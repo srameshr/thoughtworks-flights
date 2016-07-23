@@ -1,18 +1,14 @@
-.navbar-fixed {
-    top: 0;
-    border-width: 0 0 1px;
-}
+.app-header {
+  border-bottom: 1px solid #bfbfbf;
+  background-color: $lightest;
+  & header {
+    padding: 1em 0.8em;
+  }
 
-.navbar-bottom, .navbar-top {
-    position: fixed;
-    right: 0;
-    left: 0;
-    z-index: 1030;
-}
 
-.navbar {
-    position: relative;
-    min-height: 50px;
-    margin-bottom: 20px;
-    border: 1px solid transparent;
+  & header h1 {
+    margin: 0;
+    font-family: circularBook;
+    color: $primary;
+  }
 }

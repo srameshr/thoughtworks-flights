@@ -1,9 +1,23 @@
-<div>
-  <h3>
-    {{vm.userQueryData.origin}} <span>></span>
-    {{vm.userQueryData.destination}}
-  </h3>
-  <p> {{vm.userQueryData.departure}} </p>
-  <p> {{vm.userQueryData.arrival}} </p>
-</div>
-<flight flights="vm.flights"></flight>
+<main class="main-content">
+  <div class="search-info">
+    <div class="places-info container">
+      <h3>
+        {{vm.userQueryData.origin}} <span>></span>
+        {{vm.userQueryData.destination}} <span ng-if="vm.userQueryData.arrival">></span>
+        <span ng-if="vm.userQueryData.arrival">{{vm.userQueryData.origin}}</span>
+      </h3>
+    </div>
+    <div class="date-info container">
+      <p> Depart : <span>{{vm.userQueryData.departure}} </span></p>
+      <p ng-if="vm.userQueryData.arrival"> Arrive &nbsp;&nbsp;: <span>{{vm.userQueryData.arrival}} </span> </p>
+    </div>
+  </div>
+
+  <div ng-if="vm.flights.length < 1" class="no-flights">
+    <h3>Oops, no flights found. Refine your search</h3>
+    <h5>Ex: Pune Delhi etc </h5>
+  </div>
+
+  <flight flights="vm.flights"></flight>
+
+</main>

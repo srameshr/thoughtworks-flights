@@ -11,7 +11,7 @@
     function routerHelperProvider($locationProvider, $stateProvider, $urlRouterProvider) {
         /* jshint validthis:true */
         var config = {
-            docTitle: undefined,
+            docTitle: "ThoughtWorks",
             resolveAlways: {}
         };
 
@@ -20,9 +20,9 @@
         };
 
         this.$get = RouterHelper;
-        RouterHelper.$inject = ['$location', '$rootScope', '$state', 'logger'];
+        RouterHelper.$inject = ['$location', '$rootScope', '$state', '$window', 'logger'];
         /* @ngInject */
-        function RouterHelper($location, $rootScope, $state, logger) {
+        function RouterHelper($location, $rootScope, $state, $window, logger) {
             var handlingStateChangeError = false;
             var hasOtherwise = false;
             var stateCounts = {
@@ -54,6 +54,14 @@
                 }
             }
 
+            function preRouting() {
+
+              $rootScope.$on("$stateChangeSuccess",
+                function(events, toState, toParams, fromState, fromParams) {
+
+                });
+            }
+
             function handleRoutingErrors() {
                 // Route cancellation:
                 // On routing error, go to the dashboard.
@@ -79,8 +87,9 @@
             }
 
             function init() {
-                handleRoutingErrors();
-                updateDocTitle();
+              preRouting();
+              handleRoutingErrors();
+              updateDocTitle();
             }
 
             function getStates() { return $state.get(); }

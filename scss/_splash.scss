@@ -1,0 +1,27 @@
+.splash {
+  @media screen and (max-width: 767px) {
+    & {
+      display: none;
+    }
+  }
+
+  & {
+    margin-top: 3em;
+    text-align: center;
+  }
+
+  & h3 {
+    color: $light;
+    font-family: circularBold;
+  }
+
+  & ul {
+    list-style-type: none;
+    margin: 0;
+
+    & li h4 {
+      font-family: circularBook;
+      color: $light;
+    }
+  }
+}

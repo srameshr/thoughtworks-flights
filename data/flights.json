@@ -2,50 +2,93 @@
   {
     "from": "PNQ",
     "to": "DEL",
-    "arrival": "Fri Jul 22 2016 11:20:00 GMT+0530 (IST)",
-    "departure": "Fri Jul 22 2016 10:20:00 GMT+0530 (IST)",
-    "price": 9500,
+    "from_name": "Pune",
+    "to_name": "Delhi",
+    "arrival": "Sat Jul 23 2016 11:20:00 GMT+0530 (IST)",
+    "departure": "Sat Jul 23 2016 10:20:00 GMT+0530 (IST)",
+    "price": 1000,
+    "number": "A1 201",
+    "round_trip": {
+      "departure": "Sat Jul 23 2016 10:20:00 GMT+0530 (IST)",
+      "arrival": "Sat Jul 23 2016 11:20:00 GMT+0530 (IST)",
+      "number": "A1 205"
+    },
     "id": 1,
     "img": "https://worldairlinenews.files.wordpress.com/2015/06/thai-logo-lrw.jpg"
   },
 
   {
-    "from": "PNQ",
+    "from": "BNG",
     "to": "DEL",
+    "from_name": "Bangalore",
+    "to_name": "Delhi",
     "arrival": "Sat Jul 23 2016 11:20:00 GMT+0530 (IST)",
     "departure": "Sat Jul 23 2016 10:20:00 GMT+0530 (IST)",
-    "price": 10000,
+    "price": 1500,
+    "number": "A1 202",
+    "round_trip": {
+      "departure": "Sat Jul 23 2016 10:20:00 GMT+0530 (IST)",
+      "arrival": "Sat Jul 23 2016 13:20:00 GMT+0530 (IST)",
+      "number": "A1 204"
+    },
     "id": 2,
     "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e8/EtihadAirways-AbuDhabi-MasterLogo-Eng.jpg/250px-EtihadAirways-AbuDhabi-MasterLogo-Eng.jpg"
   },
 
   {
-    "from": "PNQ",
-    "to": "DEL",
+    "from": "DEL",
+    "to": "HYD",
+    "from_name": "Delhi",
+    "to_name": "Hyderabad",
     "arrival": "Sun Jul 24 2016 11:20:00 GMT+0530 (IST)",
     "departure": "Sun Jul 24 2016 10:20:00 GMT+0530 (IST)",
-    "price": 8500,
+    "price": 2500,
+    "number": "A1 203",
+    "round_trip": {
+      "departure": "Sun Jul 24 2016 10:20:00 GMT+0530 (IST)",
+      "arrival": "Sun Jul 24 2016 13:20:00 GMT+0530 (IST)",
+      "number": "A1 202"
+    },
     "id": 3,
     "img": "https://www.aa.com/newamerican/img/newLook1.jpg"
   },
 
   {
-    "from": "PNQ",
-    "to": "DEL",
+    "from": "MUM",
+    "to": "KOZ",
+    "from_name": "Mumbai",
+    "to_name": "Kozikhode",
     "arrival": "Mon Jul 25 2016 11:20:00 GMT+0530 (IST)",
     "departure": "Mon Jul 25 2016 10:20:00 GMT+0530 (IST)",
-    "price": 2000,
+    "price": 3600,
+    "number": "A1 204",
     "id": 4,
-    "img": "https://skift.com/wp-content/uploads/2013/10/lufthansa-784x728.jpg"
+    "img": "http://static1.squarespace.com/static/55b91d41e4b0e176420df76f/5652150de4b0a376ef825f9e/5652150ee4b085e3bb8be4c5/1448236605464/lufthansa%20logo.jpg"
   },
 
   {
     "from": "PNQ",
     "to": "DEL",
+    "from_name": "Pune",
+    "to_name": "Delhi",
+    "arrival": "Sat Jul 23 2016 11:20:00 GMT+0530 (IST)",
+    "departure": "Sat Jul 23 2016 10:20:00 GMT+0530 (IST)",
+    "price": 37000,
+    "number": "A1 205",
+    "id": 5,
+    "img": "http://www.praimgroup.com/shop/images/categories/PanAm_Globe_logo.jpg"
+  },
+
+  {
+    "from": "CHN",
+    "to": "KOL",
+    "from_name": "Chennai",
+    "to_name": "Kolkatta",
     "arrival": "Tue Jul 26 2016 11:20:00 GMT+0530 (IST)",
     "departure": "Tue Jul 26 2016 10:20:00 GMT+0530 (IST)",
-    "price": 30000,
-    "id": 5,
+    "price": 5000,
+    "number": "A1 205",
+    "id": 6,
     "img": "http://www.praimgroup.com/shop/images/categories/PanAm_Globe_logo.jpg"
   }
 ]

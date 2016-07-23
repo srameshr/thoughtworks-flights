@@ -1,19 +1,19 @@
-<nav class="navbar navbar-fixed navbar-top">
-<header class="clearfix">
-  <h1>PanAm</h1>
-</header>
+<nav class="app-header">
+  <header>
+    <h1>Flight search engine</h1>
+  </header>
 </nav>
-    <section id="content" class="content">
 
-
-          <tabs>
-    <pane title="One way">
-      <search-flight on-close="vm.searchFlights('lol')"></search-flight>
-    </pane>
-    <pane title="Return">
-      <search-flight show-return="true" on-close="vm.searchFlights('lol')"></search-flight>
-    </pane>
-  </tabs>
-        <div ui-view></div>
-    </section>
-</div>
+<section id="content" class="content layout">
+  <aside dont-show-when="app.flights && phone" class="search-aside">
+    <tabs>
+      <pane title="One way">
+        <search-flight></search-flight>
+      </pane>
+      <pane title="Return">
+        <search-flight show-return="true"></search-flight>
+      </pane>
+    </tabs>
+  </aside>
+  <div ui-view class="content-right" ></div>
+</section>

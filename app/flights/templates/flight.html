@@ -1,8 +1,33 @@
-<div ng-repeat="flight in flights | filter: priceRange | orderBy: 'price'">
-  <h3>{{flight.price}}</h3>
-  <p>{{flight.departure}}</p>
-  <p>{{flight.arrival}}</p>
+<div class="flight-list-item" ng-repeat="flight in flights | filter: priceRange | orderBy: 'price'">
+  <div class="container">
+    <div class="textual">
+      <h3>{{flight.price | currency: 'Rs. ' }}</h3>
+      <div class="date">
+        <div>
+          <h6 class="color-light">{{flight.number}} &nbsp;<span>DEPARTING</span></h6>
+          <p>{{flight.from}} > {{flight.to}}</p>
+          <p><span class="color-light">Depart: </span> {{flight.departure}}</p>
+          <p><span class="color-light">Arrive: </span> {{flight.arrival}}</p>
+        </div>
+        <div ng-if="flight.round_trip" class="round-trip">
+          <h6 class="color-light">{{flight.round_trip.number}} &nbsp; <span>ARRIVING</span></h6>
+          <p>{{flight.to}} > {{flight.from}}</p>
+          <p><span class="color-light">Depart: </span> {{flight.round_trip.departure}}</p>
+          <p><span class="color-light">Arrive: </span> {{flight.round_trip.arrival}}</p>
+        </div>
+      </div>
+    </div>
+    <div class="pictoral">
+      <img ng-src="{{flight.img}}" />
+      <button class="button button-small">BOOK THIS FLIGHT</button>
+    </div>
+  </div>
 </div>
 
-<input type="range" ng-model="filterPrice"   min=1000 max=10000 step=100 value=100/>
-{{filterPrice}}
+<div class="flight-list-range" ng-if="flights.length >= 1">
+  <div>
+    <rzslider rz-slider-model="slider.min"
+      rz-slider-high="slider.max">
+    </rzslider>
+  </div>
+</div>

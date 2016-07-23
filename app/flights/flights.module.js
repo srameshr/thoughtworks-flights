@@ -1,5 +1,8 @@
 (function() {
   "use strict";
   angular
-    .module("app.flights", []);
+    .module("app.flights", [
+      "app.utility",
+      "rzModule"
+    ]);
 })();

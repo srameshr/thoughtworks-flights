@@ -9,13 +9,11 @@
       restrict: 'E',
       templateUrl: 'app/search/templates/search.html',
       scope: {
-        showReturn: '=',
-        'close': '&onClose'
+        showReturn: '='
       },
       link: function(scope, ele, attrs) {
         scope.searchFlights = function(search, validity) {
           if(validity === true) {
-            console.log(search)
             $state.transitionTo("app.flights",  {
               "origin":search.origin,
               "destination": search.destination,
