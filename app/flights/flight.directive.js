@@ -4,7 +4,7 @@
     .module("app.flights")
     .directive("flight", flight);
 
-  function flight() {
+  function flight($timeout, $window, utilityService, $rootScope) {
     return {
       restrict: 'E',
       templateUrl: 'app/flights/templates/flight.html',
@@ -13,6 +13,7 @@
         flights: '='
       },
       link: function(scope,ele,attrs) {
+        scope.rangeWidth = utilityService.sliderResize();
         scope.slider = {
           min: 0,
           max: 5000

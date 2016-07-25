@@ -4,7 +4,7 @@
     .module("app.flights")
     .controller("FlightsCtrl", FlightsCtrl);
 
-  function FlightsCtrl($stateParams, flightsData, utilityService) {
+  function FlightsCtrl($stateParams, $window, flightsData, utilityService) {
     var vm = this;
 
     vm.userQueryData = {

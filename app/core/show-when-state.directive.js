@@ -4,7 +4,7 @@
     .module("app.core")
     .directive("dontShowWhen", dontShowWhen);
 
-  function dontShowWhen($window,$state,$rootScope) {
+  function dontShowWhen($window, $state, $rootScope, utilityService) {
     return {
       restrict: 'A',
       link: function($scope, $element, $attr) {
@@ -34,7 +34,9 @@
           checkExpose();
         })
         $window.onresize = function() {
+          $rootScope.rangeWidth = utilityService.sliderResize();
           checkExpose();
+
         };
 
         checkExpose();

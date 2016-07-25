@@ -58,7 +58,7 @@
 }
 
 .flight-list-range {
-  position: relative;
+  position: fixed; //
   bottom: 0;
   background: rgba(107, 107, 107, 0.6);
   text-align: right;
