@@ -10,11 +10,10 @@
       link: function($scope, $element, $attr) {
 
         function checkExpose(){
-          var currentState = $state.current.name;
-          var currentSize = $window.innerWidth;
-
-          var statesToMatch = $attr.dontShowWhen.split("&&")[0];
-          var factor = $attr.dontShowWhen.split("&&")[1];
+          var currentState = $state.current.name,
+          currentSize = $window.innerWidth,
+          statesToMatch = $attr.dontShowWhen.split("&&")[0],
+          factor = $attr.dontShowWhen.split("&&")[1];
 
 
           if(statesToMatch.indexOf(currentState) > -1){
