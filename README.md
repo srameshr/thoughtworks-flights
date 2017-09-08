@@ -1,6 +1,6 @@
 <h3>Steps to run</h3>
 <code>
-  npm install<br />
+<p>npm install</p>
   bower install<br />
   npm run serve<br />
 </code>
